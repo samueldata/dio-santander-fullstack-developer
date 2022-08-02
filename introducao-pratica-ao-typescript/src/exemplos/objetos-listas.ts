@@ -25,23 +25,23 @@ enum Profissao {
     JogadoraDeFutebol
 }
 
-interface Pessoa {
+interface Persona {
     nome: string,
     idade: number,
     profissao?: Profissao
 }
 
-interface Estudante extends Pessoa {
+interface Estudante extends Persona {
     materiais: string[]
 }
 
-const vanessa: Pessoa = {
+const vanessa: Persona = {
     nome: 'Vanessa',
     idade: 23,
     profissao: Profissao.Desenvolvedora
 }
 
-const maria: Pessoa = {
+const maria: Persona = {
     nome: 'Maria',
     idade: 23,
     profissao: Profissao.Desenvolvedora
